@@ -148,15 +148,15 @@ center c는 EMA로 업데이트
 
 **model collapse** = 모든 입력에 대해 동일한 embedding을 출력하는 현상
 
-또 representation learning의 경우, contrastive learning으로 학습하는 경우가 많다.
+또 representation learning의 경우, contrastive learning으로 학습하는 경우가 많음.
 
-contrastive learning이란 같은 이미지(positive pair)끼리는 embedding vector가 가깝게 나오도록, 다른 이미지(negative pair)끼리는 멀어지도록 metric learning 하는 것이다.
+contrastive learning이란 같은 이미지(positive pair)끼리는 embedding vector가 가깝게 나오도록, 다른 이미지(negative pair)끼리는 멀어지도록 metric learning 하는 것.
 
-여기서 negative pair를 꼭 써주는 이유가 있는데, positive pair만을 사용하는 경우 **Collapsing**이 일어나기 때문이다.
+여기서 negative pair를 꼭 써주는 이유가 있는데, positive pair만을 사용하는 경우 **Collapsing**이 일어나기 때문.
 
-이렇게하면 네트워크 입장에서 계속 같은(augmentation돼서 아예 동일하진 않지만) 이미지끼리 embedding vector를 가깝게 하는 것으로 받아들이고 네트워크는 계속 둘이 같은 이미지(similarity=1)이 되도록 embedding vector를 output한다.
+이렇게하면 네트워크 입장에서 계속 같은(augmentation돼서 아예 동일하진 않지만) 이미지끼리 embedding vector를 가깝게 하는 것으로 받아들이고 네트워크는 계속 둘이 같은 이미지(similarity=1)이 되도록 embedding vector를 출력함.
 
-그래서 두 경우 모두, **constant**를 output한다고 표현하기도 한다.
+그래서 두 경우 모두, **constant**를 output한다고 표현하기도 함.
 
 VIT 모델에서 **model collapse**가 발생하는 이유는 다양한 학습 데이터를 사용해야 하는데, 데이터가 다양하지 않거나 특정 클래스의 이미지가 균등하지 않거나, 특정 클래스에서만 집중하여 feature를 추출하기 때문임
 
