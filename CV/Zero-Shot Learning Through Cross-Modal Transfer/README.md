@@ -1,6 +1,6 @@
 # Zero-Shot Learning Through Cross-Modal Transfer
 
-Year: 2013
+Year: 2013  
 원문: https://arxiv.org/abs/1301.3666  
 저자: Richard Socher, Milind Ganjoo, Hamsa Sridhar, Osbert Bastani, Christopher D. Manning, Andrew Y. Ng  
 태그: Computer Vision
